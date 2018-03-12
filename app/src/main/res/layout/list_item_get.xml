@@ -10,7 +10,7 @@
         android:id="@+id/itemTitle"
         android:layout_width="60dp"
         android:layout_height="match_parent"
-        android:background="#ff0000"
+        android:background="#FAB908"
         android:gravity="center"
         android:layout_gravity="center"
         android:text="wood"

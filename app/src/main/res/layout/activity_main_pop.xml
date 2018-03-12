@@ -8,7 +8,24 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:background="#ff0000"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Today's results"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
         android:gravity="center_horizontal"
         android:background="#758487"
         android:orientation="horizontal"
@@ -17,19 +34,19 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:text="Item have"
+            android:layout_marginTop="8dp"
+            android:text="Item acquired"
             android:textColor="#ffffff" />
     </LinearLayout>
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="170dp"
         android:background="#ffffff">
 
         <ListView
-            android:id="@+id/ItemHave_ListView"
+            android:id="@+id/itemAcquired_ListView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:divider="#e5e5e5"
@@ -40,34 +57,45 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="35dp"
         android:gravity="center_horizontal"
         android:background="#758487"
         android:orientation="horizontal"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp">
+        android:layout_gravity="center">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:text="Item Making"
+            android:layout_marginTop="8dp"
+            android:text="Today's diary"
             android:textColor="#ffffff" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="170dp"
         android:background="#ffffff">
 
         <ListView
-            android:id="@+id/ItemMaking_ListView"
+            android:id="@+id/diaryListView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:divider="#e5e5e5"
             android:dividerHeight="2dp"
             android:padding="5dp">
         </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Next Day"/>
     </LinearLayout>
 
 </LinearLayout>
