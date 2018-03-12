@@ -24,7 +24,7 @@
             android:orientation="horizontal"
             android:weightSum="5">
 
-            <!-- Start Button And Timer Layout  -->
+            <!-- Button And Timer Layout  -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -33,39 +33,61 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <!-- Start Button -->
+                <!-- Dungeon Button -->
                 <Button
                     android:id="@+id/track"
                     android:layout_width="120dp"
-                    android:layout_height="60dp"
-                    android:background="@drawable/button_background2"
-                    android:drawableLeft="@drawable/play_icon"
-                    android:fontFamily="sans-serif-condensed"
+                    android:layout_height="80dp"
+                    android:background="@drawable/button_background3"
                     android:padding="8dp"
-                    android:shadowColor="@color/Main_Blue_Dark"
-                    android:text="start"
+                    android:text="Dungeon Entry"
                     android:textColor="#ffffff"
-                    android:textSize="22sp" />
-
-                <!-- Timer View -->
-                <TextView
-                    android:id="@+id/time"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:fontFamily="sans-serif-condensed"
-                    android:gravity="center"
-                    android:text="0.00"
-                    android:textColor="@color/Main_Blue"
                     android:textSize="22sp" />
             </LinearLayout>
 
-            <!-- Steps , Km , Calories  Layout  -->
+            <!-- Goal Steps Get Item Layout  -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="2.8"
                 android:orientation="vertical">
+
+                <!-- Goal Linear Layout  -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <!-- Goal Name-->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-condensed"
+                        android:gravity="center"
+                        android:text="Goal"
+                        android:textColor="@color/Main_Blue"
+                        android:textSize="20sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/Light_Blue" />
+
+                    <!-- Goal Value -->
+                    <TextView
+                        android:id="@+id/Goal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-condensed"
+                        android:gravity="center"
+                        android:text="500"
+                        android:textColor="@color/Main_Blue"
+                        android:textSize="20sp" />
+                </LinearLayout>
 
                 <!-- Steps Linear Layout  -->
                 <LinearLayout
@@ -75,7 +97,7 @@
                     android:orientation="horizontal"
                     android:weightSum="2">
 
-                    <!-- Steps Name-->
+                    <!-- Steps Name  -->
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -91,9 +113,9 @@
                         android:layout_height="match_parent"
                         android:background="@color/Light_Blue" />
 
-                    <!-- Steps Value -->
+                    <!-- Steps View  -->
                     <TextView
-                        android:id="@+id/steps"
+                        android:id="@+id/Steps"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -104,7 +126,7 @@
                         android:textSize="20sp" />
                 </LinearLayout>
 
-                <!-- Km  Linear Layout  -->
+                <!-- Get Item Linear Layout  -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
@@ -112,14 +134,14 @@
                     android:orientation="horizontal"
                     android:weightSum="2">
 
-                    <!-- KM Name  -->
+                    <!-- Get Item Name  -->
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:fontFamily="sans-serif-condensed"
                         android:gravity="center"
-                        android:text="km"
+                        android:text="Get Item"
                         android:textColor="@color/Main_Blue"
                         android:textSize="20sp" />
 
@@ -128,52 +150,15 @@
                         android:layout_height="match_parent"
                         android:background="@color/Light_Blue" />
 
-                    <!-- KM View  -->
+                    <!-- Get Item View  -->
                     <TextView
-                        android:id="@+id/distance"
+                        android:id="@+id/GetItem"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:fontFamily="sans-serif-condensed"
                         android:gravity="center"
-                        android:text="0.000"
-                        android:textColor="@color/Main_Blue"
-                        android:textSize="20sp" />
-                </LinearLayout>
-
-                <!-- Calories  Linear Layout  -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:layout_marginTop="10dp"
-                    android:orientation="horizontal"
-                    android:weightSum="2">
-
-                    <!-- Calories Name  -->
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:fontFamily="sans-serif-condensed"
-                        android:gravity="center"
-                        android:text="Calories"
-                        android:textColor="@color/Main_Blue"
-                        android:textSize="20sp" />
-
-                    <View
-                        android:layout_width="1dp"
-                        android:layout_height="match_parent"
-                        android:background="@color/Light_Blue" />
-
-                    <!-- Calories View  -->
-                    <TextView
-                        android:id="@+id/cal"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:fontFamily="sans-serif-condensed"
-                        android:gravity="center"
-                        android:text="0.00"
+                        android:text="0"
                         android:textColor="@color/Main_Blue"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -188,67 +173,33 @@
     </LinearLayout>
 
 
-    <!-- 평상시에는 숨겨져 있다 -->
     <LinearLayout
-        android:id="@+id/achievementLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="3dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        tools:ignore="InvalidId">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="목표 달성률: "
-            android:textColor="@color/colorAccent"
-            android:textSize="13dp"
-            android:textStyle="bold" />
-
-        <ProgressBar
-            android:id="@+id/achievementProgressBar"
-            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="3dp"
-            android:max="100"
-            android:progress="0"
-            android:progressDrawable="@drawable/custom_progress" />
-
-        <TextView
-            android:id="@+id/achievementPercentage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:text="0"
-            android:textColor="#ED00CB"
-            android:textSize="15dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="%"
-            android:textColor="#ED00CB"
-            android:textSize="13dp" />
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="5dp"
-        android:background="@color/Light_Blue" />
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
         android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/walk" />
+        <ListView
+            android:id="@+id/runTalk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#e5e5e5"
+            android:dividerHeight="2dp"
+            android:padding="5dp">
+        </ListView>
     </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/runEnd"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Stop walking"/>
+
+    </LinearLayout>
+
 </LinearLayout>

@@ -36,7 +36,7 @@ public class NUM2_MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(
                         getApplicationContext(),
-                        TESTActivity.class);
+                        NUM4_RunActivity.class);
                 finish();                         // end NUM2 screen
                 startActivity(intent);            // move NUM4 screen
             }

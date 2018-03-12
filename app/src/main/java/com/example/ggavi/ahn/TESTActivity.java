@@ -67,7 +67,7 @@ public class TESTActivity extends Activity implements SensorEventListener {
         if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
             long currentTime = System.currentTimeMillis();
             long gabOfTime = (currentTime - lastTime);
-            if (gabOfTime > 100) {
+            if (gabOfTime > 120) {
                 lastTime = currentTime;
                 x = event.values[SensorManager.DATA_X];
                 y = event.values[SensorManager.DATA_Y];
