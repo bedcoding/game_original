@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.ggavi.ahn.MainActivity"
+    tools:context="com.example.ggavi.ahn.NUM2_MainActivity"
     android:background="#ffffff">
 
     <LinearLayout
@@ -153,18 +153,18 @@
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/trainingButton"
+            android:id="@+id/itemButton"
             android:layout_marginLeft="5dp"
             android:layout_width="180dp"
             android:layout_height="match_parent"
             android:text="item list"/>
 
         <Button
-            android:id="@+id/startButton"
+            android:id="@+id/runButton"
             android:layout_marginLeft="15dp"
             android:layout_width="180dp"
             android:layout_height="match_parent"
-            android:text="Start Walking"/>
+            android:text="start running"/>
     </LinearLayout>
 
 </LinearLayout>
