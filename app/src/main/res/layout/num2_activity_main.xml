@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:background="#758487"
         android:orientation="horizontal"
@@ -18,9 +18,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Family Health"
-            android:textColor="#ffffff" />
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:text="Family Health"/>
     </LinearLayout>
 
 
@@ -55,98 +57,147 @@
 
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="175dp"
-        android:background="#ffffff">
-
-        <ListView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/family_ListView"
-            android:divider="#e5e5e5"
-            android:dividerHeight="2dp"
-            android:padding="5dp">
-        </ListView>
-    </LinearLayout>
-
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:gravity="center_horizontal"
-        android:background="#758487"
-        android:orientation="horizontal"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="hero's stats"
-            android:textColor="#ffffff" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="165dp"
-        android:background="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="380dp"
         android:orientation="vertical">
 
+        <!-- family -->
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text=" H  P: "
+                android:id="@+id/family1"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                android:gravity="center"
                 android:layout_gravity="center"
-                android:padding="15dp"
-                android:textColor="#000000"
+                android:text="family1"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/hero_HP"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="100"
+            <LinearLayout
+                android:layout_width="155dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="hungry : "
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:padding="5dp"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/hungry1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#000000"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="thirst : "
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/thirst1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#000000"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="hp : "
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/hp1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#000000"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/foodUse1"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:padding="15dp"
-                android:textColor="#000000"
-                android:textStyle="bold" />
+                android:gravity="center"
+                android:typeface="serif"
+                android:text="food"
+                android:background="@drawable/custombtn"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="7dp" />
+
+            <Button
+                android:id="@+id/waterUse1"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:typeface="serif"
+                android:text="water"
+                android:background="@drawable/custombtn"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:layout_marginRight="10dp" />
         </LinearLayout>
 
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text=" ATK: "
-                android:layout_gravity="center"
-                android:padding="15dp"
-                android:textColor="#000000"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/hero_ATK"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="1"
-                android:layout_gravity="center"
-                android:padding="15dp"
-                android:textColor="#000000"
-                android:textStyle="bold" />
-
-        </LinearLayout>
 
     </LinearLayout>
+
+
+
 
     <LinearLayout
         android:layout_width="match_parent"

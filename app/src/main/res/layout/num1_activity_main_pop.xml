@@ -8,18 +8,21 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:background="#ff0000"
         android:orientation="horizontal"
         android:layout_gravity="center">
 
         <TextView
+            android:id="@+id/DayTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:text="Today's diary"
-            android:textColor="#ffffff" />
+            android:layout_marginBottom="15dp"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:text="Day 1" />
     </LinearLayout>
 
 
@@ -28,14 +31,17 @@
         android:layout_height="350dp"
         android:background="#ffffff">
 
-        <ListView
-            android:id="@+id/diaryListView"
+        <TextView
+            android:id="@+id/diaryTextView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:divider="#e5e5e5"
-            android:dividerHeight="2dp"
-            android:padding="5dp">
-        </ListView>
+            android:textSize="25sp"
+            android:text="  Today's diary \n
+One day, North Korea made Seoul of South Korea into fire. Kim Jong Eun fired a nuclear weapon, So we came down to avoid the radiation.
+
+After 100 days, there will also be radioactive fallout here. We have to finish the bunker before that day."
+
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -43,11 +49,11 @@
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/nextDayButton"
+            android:id="@+id/nextButton"
             android:layout_marginLeft="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Next Day"/>
+            android:text="Next"/>
     </LinearLayout>
 
 </LinearLayout>

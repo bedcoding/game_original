@@ -28,31 +28,27 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="1dp"
                 android:layout_weight="2.2"
                 android:gravity="center"
                 android:orientation="vertical">
 
                 <!-- Dungeon Button -->
-                <Button
-                    android:id="@+id/track"
-                    android:layout_width="120dp"
-                    android:layout_height="80dp"
-                    android:background="@drawable/button_background3"
-                    android:padding="8dp"
-                    android:text="Dungeon Entry"
-                    android:textColor="#ffffff"
-                    android:textSize="22sp" />
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/walk" />
             </LinearLayout>
 
-            <!-- Goal Steps Get Item Layout  -->
+
+            <!-- 3 Linear Layout -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="2.8"
                 android:orientation="vertical">
 
-                <!-- Goal Linear Layout  -->
+                <!-- Time Linear Layout  -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
@@ -60,14 +56,14 @@
                     android:orientation="horizontal"
                     android:weightSum="2">
 
-                    <!-- Goal Name-->
+                    <!-- Time Name-->
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:fontFamily="sans-serif-condensed"
                         android:gravity="center"
-                        android:text="Goal"
+                        android:text="Time"
                         android:textColor="@color/Main_Blue"
                         android:textSize="20sp" />
 
@@ -76,15 +72,15 @@
                         android:layout_height="match_parent"
                         android:background="@color/Light_Blue" />
 
-                    <!-- Goal Value -->
+                    <!-- Time Value -->
                     <TextView
-                        android:id="@+id/Goal"
+                        android:id="@+id/Time"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:fontFamily="sans-serif-condensed"
                         android:gravity="center"
-                        android:text="500"
+                        android:text="0.00"
                         android:textColor="@color/Main_Blue"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -173,10 +169,14 @@
     </LinearLayout>
 
 
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="300dp"
         android:orientation="vertical">
+
+
+
 
         <ListView
             android:id="@+id/runTalk"

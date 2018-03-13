@@ -23,21 +23,159 @@
     </LinearLayout>
 
 
-    <LinearLayout
+    <!-- material item list -->
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="#ffffff">
+        android:layout_height="200dp">
 
-        <ListView
-            android:id="@+id/ItemHave_ListView"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:divider="#e5e5e5"
-            android:dividerHeight="2dp"
-            android:padding="5dp">
-        </ListView>
-    </LinearLayout>
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:background="#ffffff">
 
+            <!-- item 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/ironTitle"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:background="#FAB908"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="iron"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:text="Num : "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="center"
+                            android:padding="5dp"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/IronAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="3"
+                            android:layout_gravity="center"
+                            android:padding="5dp"
+                            android:textColor="#000000"
+                            android:textColorHint="#000000"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/IronDescription"
+                            android:text=" Iron is used as a component of various objects."
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="#758487" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- item 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/woodTitle"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:background="#FAB908"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="wood"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:text="Num : "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="center"
+                            android:padding="5dp"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/woodAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="10"
+                            android:layout_gravity="center"
+                            android:padding="5dp"
+                            android:textColor="#000000"
+                            android:textColorHint="#000000"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/woodDescription"
+                            android:text=" Trees were cut and processed."
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="#758487" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!-- item Making -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
@@ -55,19 +193,101 @@
             android:textColor="#ffffff" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#ffffff">
 
-        <ListView
-            android:id="@+id/ItemMaking_ListView"
+    <!-- Making item list -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:divider="#e5e5e5"
-            android:dividerHeight="2dp"
-            android:padding="5dp">
-        </ListView>
-    </LinearLayout>
+            android:orientation="vertical">
+
+            <!-- Making item 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/ItemMakingTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#F17006"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="shovel"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/useItemTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="iron"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:padding="5dp"
+                                android:textColor="#000000" />
+
+                            <TextView
+                                android:id="@+id/useItem"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-5"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:textColor="#000000" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/useItemDescription"
+                                android:text="A shovel for digging the ground."
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_gravity="center"
+                                android:textColor="#758487"
+                                android:padding="5dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/UseItemButton"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="right"
+                        android:gravity="center"
+                        android:text="making"
+                        android:background="@drawable/custombtn"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="5dp" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
 
 </LinearLayout>

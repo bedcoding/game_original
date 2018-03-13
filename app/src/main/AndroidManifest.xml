@@ -21,7 +21,6 @@
         <activity android:name=".NUM3_Activity_Item" />
         <activity android:name=".NUM4_RunActivity" />
         <activity android:name=".TESTActivity" />
-        <activity android:name=".NUM5_Dungeon"></activity>
     </application>
 
 </manifest>
