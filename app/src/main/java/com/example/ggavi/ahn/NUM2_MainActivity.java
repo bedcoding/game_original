@@ -14,9 +14,7 @@ public class NUM2_MainActivity extends AppCompatActivity {
         setContentView(R.layout.num2_activity_main);
 
 
-
-
-        // NEXT Button (NUM2 -> NUM3)
+        // NEXT Button (NUM2 -> NUM3) : item list
         Button b = (Button)findViewById(R.id.itemButton);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -25,11 +23,12 @@ public class NUM2_MainActivity extends AppCompatActivity {
                         getApplicationContext(),
                         NUM3_Activity_Item.class);
 
+                                                  // no finish (NUM3 : pop screen)
                 startActivity(intent);            // move NUM3 screen
             }
         });
 
-        // NEXT Button (NUM2 -> NUM4)
+        // NEXT Button (NUM2 -> NUM4) : play game
         Button b2 = (Button)findViewById(R.id.runButton);
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,6 +36,7 @@ public class NUM2_MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(
                         getApplicationContext(),
                         NUM4_RunActivity.class);
+
                 finish();                         // end NUM2 screen
                 startActivity(intent);            // move NUM4 screen
             }
