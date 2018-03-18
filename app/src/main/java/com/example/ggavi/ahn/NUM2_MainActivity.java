@@ -13,6 +13,8 @@ public class NUM2_MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.num2_activity_main);
 
+        // ActionBar Hide!
+        getSupportActionBar().hide();
 
         // NEXT Button (NUM2 -> NUM3) : item list
         Button b = (Button)findViewById(R.id.itemButton);

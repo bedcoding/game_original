@@ -9,5 +9,8 @@ public class NUM3_Activity_Item extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.num3_activity_item);
+
+        // ActionBar Hide!
+        getSupportActionBar().hide();
     }
 }

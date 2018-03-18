@@ -2,9 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ggavi.ahn">
 
-    <!-- use Internet -->
-    <uses-permission android:name="android.permission.INTERNET"/>
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NUM1_MainPopActivity">
+        <activity android:name=".NUM0_First">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,11 +17,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".NUM1_MainPopActivity" />
         <activity android:name=".NUM2_MainActivity" />
         <activity android:name=".NUM3_Activity_Item" />
         <activity android:name=".NUM4_RunActivity" />
-        <activity android:name=".TESTActivity" />
-        <activity android:name=".NUM5_EndingVideo"></activity>
+        <activity android:name=".NUM5_EndingVideo">
+        </activity>
     </application>
 
 </manifest>

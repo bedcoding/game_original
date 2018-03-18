@@ -17,9 +17,11 @@ public class NUM5_EndingVideo extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.num5_activity_ending_video);
+
+
         VideoView vv = (VideoView) findViewById(R.id.vv);
 
-        //http://www ~~~ 가능
+        // http://www ~~~ possible
         String uriPath = "android.resource://" + getPackageName() + "/" + R.raw.ex;
         Uri uri = Uri.parse(uriPath);
         vv.setVideoURI(uri);
@@ -27,7 +29,7 @@ public class NUM5_EndingVideo extends Activity {
         vv.start();
 
 
-        //이벤트기능
+        // Event
         vv.setOnInfoListener(new MediaPlayer.OnInfoListener() {
             @Override
             public boolean onInfo(MediaPlayer mp, int what, int extra) {
@@ -37,12 +39,12 @@ public class NUM5_EndingVideo extends Activity {
                         break;
 
                     case MediaPlayer.MEDIA_INFO_BUFFERING_START:
-                        // Progress Diaglog 출력
+                        // Progress Diaglog 출력(Print)
                         Toast.makeText(getApplicationContext(), "MEDIA_INFO_BUFFERING_START", Toast.LENGTH_LONG).show();
                         break;
 
                     case MediaPlayer.MEDIA_INFO_BUFFERING_END:
-                        // Progress Dialog 삭제
+                        // Progress Dialog 삭제(Delete)
                         Toast.makeText(getApplicationContext(), "MEDIA_INFO_BUFFERING_END", Toast.LENGTH_LONG).show();
                         break;
                 }

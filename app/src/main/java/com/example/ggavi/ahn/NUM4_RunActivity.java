@@ -28,6 +28,8 @@ public class NUM4_RunActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.num4_activity_run);
 
+        // ActionBar Hide!
+        getSupportActionBar().hide();
 
         // timer
         mChronometer = (Chronometer) findViewById(R.id.chronometer_view);  // timer layout

@@ -18,6 +18,8 @@ public class NUM1_MainPopActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.num1_activity_main_pop);
 
+        // ActionBar Hide!
+        getSupportActionBar().hide();
 
         dayText = (TextView) findViewById(R.id.DayTextView);
         dayText.setText("Day " + day);
@@ -29,7 +31,7 @@ public class NUM1_MainPopActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if(day < 1)
+                if(day < 3)
                 {
                     Intent intent = new Intent(
                             getApplicationContext(),
@@ -40,7 +42,7 @@ public class NUM1_MainPopActivity extends AppCompatActivity {
                     day++;  // day +1;
                 }
 
-                else // (day == 1)
+                else // (day == 3)
                 {
                     Intent intent = new Intent(
                             getApplicationContext(),
