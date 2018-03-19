@@ -18,36 +18,16 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="130dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1.8"
             android:baselineAligned="false"
-            android:orientation="horizontal"
-            android:weightSum="5">
-
-            <!-- Button And Timer Layout  -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="1dp"
-                android:layout_weight="2.2"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <!-- Button -->
-                <Button
-                    android:id="@+id/b_click"
-                    android:layout_below="@+id/Touch"
-                    android:layout_width="150dp"
-                    android:layout_height="130dp"
-                    android:text="Click"/>
-            </LinearLayout>
+            android:orientation="horizontal">
 
 
             <!-- 3 Linear Layout -->
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="2.8"
                 android:orientation="vertical">
 
                 <!-- Time Linear Layout  -->
@@ -139,7 +119,7 @@
                         android:layout_weight="1"
                         android:fontFamily="sans-serif-condensed"
                         android:gravity="center"
-                        android:text="Get Item"
+                        android:text="Food"
                         android:textColor="@color/Main_Blue"
                         android:textSize="20sp" />
 
@@ -150,7 +130,7 @@
 
                     <!-- Get Item View  -->
                     <TextView
-                        android:id="@+id/GetItem"
+                        android:id="@+id/GetFood"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -160,6 +140,44 @@
                         android:textColor="@color/Main_Blue"
                         android:textSize="20sp" />
                 </LinearLayout>
+
+                <!-- Get Item Linear Layout  -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <!-- Get Item Name  -->
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-condensed"
+                        android:gravity="center"
+                        android:text="Water"
+                        android:textColor="@color/Main_Blue"
+                        android:textSize="20sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/Light_Blue" />
+
+                    <!-- Get Item View  -->
+                    <TextView
+                        android:id="@+id/GetWater"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-condensed"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/Main_Blue"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
             </LinearLayout>
         </LinearLayout>
 
@@ -173,21 +191,28 @@
 
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="300dp"
         android:orientation="vertical">
 
-
-
-
-        <ListView
-            android:id="@+id/runTalk"
+        <Button
+            android:id="@+id/b_click"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:divider="#e5e5e5"
-            android:dividerHeight="2dp"
-            android:padding="5dp">
-        </ListView>
+            android:layout_height="100dp"
+            android:text="Click"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/walk" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Here is a description of the photo."/>
+
     </LinearLayout>
 
 
