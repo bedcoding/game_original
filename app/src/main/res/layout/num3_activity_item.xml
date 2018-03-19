@@ -46,25 +46,36 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="           water: "/>
+            android:text="        water: "/>
 
         <TextView
             android:id="@+id/waterAmount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_horizontal"
+        android:padding="5.5dp"
+        android:background="#C4DCE2">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="           hp reduction: "/>
+            android:textColor="#ff0000"
+            android:text="Radioactive contamination: "/>
 
         <TextView
             android:id="@+id/radiationAmount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="-1"/>
+            android:textColor="#ff0000"
+            android:text="-3"/>
     </LinearLayout>
+
 
 
 
@@ -140,7 +151,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                android:text=" Reduces the amount of family 1 radiation damage by 1."
+                                android:text=" Reduces the amount of family 1 radiation damage by 5."
                                 android:layout_marginLeft="10dp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -225,7 +236,7 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                android:text=" Reduces the amount of family 2 radiation damage by 1."
+                                android:text=" Reduces the amount of family 2 radiation damage by 5."
                                 android:layout_marginLeft="10dp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
