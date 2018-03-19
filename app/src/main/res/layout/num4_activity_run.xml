@@ -119,7 +119,7 @@
                         android:layout_weight="1"
                         android:fontFamily="sans-serif-condensed"
                         android:gravity="center"
-                        android:text="Food"
+                        android:text="Get Food"
                         android:textColor="@color/Main_Blue"
                         android:textSize="20sp" />
 
@@ -156,7 +156,7 @@
                         android:layout_weight="1"
                         android:fontFamily="sans-serif-condensed"
                         android:gravity="center"
-                        android:text="Water"
+                        android:text="Get Water"
                         android:textColor="@color/Main_Blue"
                         android:textSize="20sp" />
 

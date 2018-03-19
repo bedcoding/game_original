@@ -28,8 +28,9 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="20dp"
+        android:layout_height="30dp"
         android:gravity="center_horizontal"
+        android:padding="5.5dp"
         android:background="#C4DCE2">
 
         <TextView
